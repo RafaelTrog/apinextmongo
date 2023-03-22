@@ -1,7 +1,7 @@
 import { NextApiRequest, NextApiResponse } from "next";
 import { MongoClient } from "mongodb";
 
-const uri = process.env.NEXT_PUBLIC_MONGO_DB_CONNECTION_STRING || ""
+const uri = process.env.NEXT_PUBLIC_MONGODB_URI || ""
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
     if (req.method === "GET") {

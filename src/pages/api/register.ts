@@ -2,7 +2,7 @@ import { NextApiRequest, NextApiResponse } from "next";
 import { MongoClient } from "mongodb";
 import jwt from "jsonwebtoken"
 
-const uri = process.env.NEXT_PUBLIC_MONGO_DB_CONNECTION_STRING || ""
+const uri = process.env.NEXT_PUBLIC_MONGODB_URI || ""
 const jwtSecret = process.env.NEXT_PUBLIC_JWT_SECRET || ""
 
 async function registerUser(userData: any) {
