@@ -15,7 +15,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>{process.env.NEXT_PUBLIC_MONGO_DB_CONNECTION_STRING}</h1>
+        <h1>NEXT MONGODB API</h1>
       </main>
     </>
   )
